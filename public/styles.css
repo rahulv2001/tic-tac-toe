@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, rgb(24, 17, 46), 50%, rgb(60, 49, 99));
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: 600;
+    color: white;
+    padding-top: 2rem;
+    font-size: 54px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 24rem;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.sq{
+    color: white;
+    text-align: center;
+    width: 8rem;
+    margin: auto;
+    height: 8rem;
+    border: 5px solid white;
+    position: relative;
+}
+
+.sq p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.turn-play{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sq-1, .sq-2, .sq-3{
+    border-top: none;
+}
+
+.sq-7, .sq-8, .sq-9{
+    border-bottom: none;
+}
+
+.sq-1, .sq-4, .sq-7{
+    border-left: none;
+}
+
+.sq-3, .sq-6, .sq-9{
+    border-right: none;
+}
+
+.footer{
+    padding-top: 3rem;
+}
+
+.footer p{
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.footer button{
+    background: linear-gradient(90deg, rgb(24, 17, 46), 50%, rgb(60, 49, 99));
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.footer button:active{
+    transform: scale(1.1);
+    transition: 0.1s ease;
+}
